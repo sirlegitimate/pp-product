@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game Window</title>
+	<script type="module" src="level-data.js"></script>
+	<script type="module" src="game.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header><a href="index.html"><button id="backButton"><img src="back_arrow_red.png" alt="Go Back"></button></a><span id="levelName">(Level Name)</span></header>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="gameUI">
+		<div id="questionBox"><h2 id="question">---</h2></div>
+		<div id="timer"><h3>Timer Disabled</h3></div>
+		<div id="answerBox">
+			<div class="small"></div>
+			<div id="answerScreen">
+				<p id="answer">Error!</p>
+			</div>
+			<div class="small"></div>
+			<div id="numberPad">
+				<div class="buttonRow">
+					<button class="numberButton" id="number1"><p>1</p></button>
+					<button class="numberButton" id="number2"><p>2</p></button>
+					<button class="numberButton" id="number3"><p>3</p></button>
+				</div>
+				<div class="buttonRow">
+					<button class="numberButton" id="number4"><p>4</p></button>
+					<button class="numberButton" id="number5"><p>5</p></button>
+					<button class="numberButton" id="number6"><p>6</p></button>
+				</div>
+				<div class="buttonRow">
+					<button class="numberButton" id="number7"><p>7</p></button>
+					<button class="numberButton" id="number8"><p>8</p></button>
+					<button class="numberButton" id="number9"><p>9</p></button>
+				</div>
+				<div class="buttonRow">
+					<button class="numberButton" id="number0"><p>0</p></button>
+					<button class="numberButton" id="addDecimalSeperator"><p>.</p></button>
+					<button class="numberButton" id="changeSign"><p>+/-</p></button>
+				</div>
+				<div class="buttonRow">
+					<button class="numberButton" id="deleteButton"><p>Del</p></button>
+					<button id="submitButton"><p>Submit</p></button>
+				</div>
+			</div>
+		</div>
+		<div><h2 id="score">Score: 0</h2></div>
+		<div><h2 id="result"></h2></div>
+	</div>
+	<br>
+	<div id="infoBox">
+		<h1 id="infoTitle">Placeholder</h1>
+		<div id="infoContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, neque ac malesuada luctus, nulla ante interdum ex, ut fermentum ligula est venenatis elit. Mauris posuere tortor vel bibendum ornare. Nam interdum elit magna, at scelerisque dolor tincidunt eu. Sed id molestie nisl. Integer eleifend quam nec orci interdum mollis. Ut gravida felis quis erat faucibus vehicula. Proin aliquam ipsum facilisis aliquam dapibus. Phasellus feugiat urna vel enim dignissim maximus. Duis at tortor urna. Nulla rutrum, nunc ut pulvinar finibus, risus lorem sollicitudin purus, sit amet imperdiet ligula mi at ex. Aliquam aliquam elementum velit et euismod. Cras ac tincidunt velit, nec mollis orci. Praesent ut mauris id nisi commodo ultricies. Phasellus vel pellentesque libero. Pellentesque eleifend in mi a tempor.</div>
+		<button id="infoButton"><p>Start the Game!</p></button>
+	</div>
+</body>
+</html>
